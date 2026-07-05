@@ -5,59 +5,126 @@ import { Link } from "react-router-dom";
 import factory from "../../assets/images/hero.jpg";
 
 function About() {
-  return (
-    <section className="about-section">
-      <div className="about-image">
-        <img src={factory} alt="SSW Factory" />
-      </div>
+    return (
+        <section className="about-section">
 
-      <div className="about-content">
-        <span className="section-tag">
-          ABOUT SSW
-        </span>
+            <div className="about-image">
+                <img src={factory} alt="SSW Factory" />
+            </div>
 
-        <h2>
-          Engineering Security Solutions for Critical Infrastructure
-        </h2>
+            <div className="about-content">
 
-        <p>
-          Special & Safety Work (SSW - Nisreen Factory) is a Saudi manufacturer
-          specializing in blast resistant doors, bullet resistant doors,
-          fire-rated doors, security windows, and custom engineered security
-          solutions for military, governmental, industrial, and commercial
-          projects across the GCC.
-        </p>
+                <h2>
+                    ABOUT SSW
+                </h2>
 
-        <p>
-          With experienced engineers, advanced manufacturing technologies, and
-          internationally recognized testing standards, SSW delivers reliable,
-          high-quality products tailored to each project's unique requirements.
-        </p>
+                <div className="about-intro">
 
-        <div className="about-features">
-          <div className="feature">
-            ✓ Saudi Manufacturing
-          </div>
+                    <p className="lead">
+                        <strong>Special & Safety Work (SSW)</strong>, operating under the
+                        well-established <strong>Nisreen Factory</strong>, is one of Saudi
+                        Arabia's leading manufacturers of engineered physical security
+                        solutions. We specialize in the design, engineering,
+                        manufacturing, testing and installation of advanced protection
+                        systems for military, governmental, industrial, commercial and
+                        critical infrastructure projects throughout Saudi Arabia and
+                        the GCC.
+                    </p>
 
-          <div className="feature">
-            ✓ International Quality Standards
-          </div>
+                </div>
 
-          <div className="feature">
-            ✓ Custom Engineering Solutions
-          </div>
+                <div className="about-features">
 
-          <div className="feature">
-            ✓ Advanced Security Products
-          </div>
-        </div>
+                    <div className="feature">
+                        ✓ Saudi Manufacturing
+                    </div>
 
-        <Link to="/about" className="about-btn">
-          Learn More
-        </Link>
-      </div>
-    </section>
-  );
+                    <div className="feature">
+                        ✓ International Quality Standards
+                    </div>
+
+                    <div className="feature">
+                        ✓ Custom Engineering Solutions
+                    </div>
+
+                    <div className="feature">
+                        ✓ Advanced Security Products
+                    </div>
+
+                </div>
+
+                <div className="about-cards">
+
+                    <div className="about-card">
+
+                        <h3>
+                            <span>01</span>
+                            Engineering & Manufacturing
+                        </h3>
+
+                        <p>
+                            Our experienced engineers and skilled technicians manufacture
+                            blast resistant doors, bullet resistant doors and windows,
+                            fire-rated doors, detention systems, vault doors, hangar
+                            doors, blast valves, industrial steel products,
+                            architectural metal works and fully customized security
+                            solutions using modern manufacturing technologies and strict
+                            quality control procedures.
+                        </p>
+
+                    </div>
+
+                    <div className="about-card">
+
+                        <h3>
+                            <span>02</span>
+                            Certified Performance
+                        </h3>
+
+                        <p>
+                            Every product is engineered to meet demanding operational
+                            requirements and independently tested by internationally
+                            recognized organizations including Intertek, TÜV NORD, DNV,
+                            SIRIM QAS, ARA, JODDB, Close Focus Research and TestEx.
+                            Our manufacturing processes operate under ISO 9001:2015 and
+                            ISO 45001:2018 management systems, demonstrating our
+                            commitment to quality, safety and continuous improvement.
+                        </p>
+
+                    </div>
+
+                    <div className="about-card">
+
+                        <h3>
+                            <span>03</span>
+                            Trusted Across Critical Industries
+                        </h3>
+
+                        <p>
+                            SSW has successfully delivered security solutions for
+                            ministries, military facilities, embassies, airports,
+                            oil & gas installations, petrochemical plants, refineries,
+                            power plants and major industrial developments across Saudi
+                            Arabia and the GCC. Every solution is engineered to provide
+                            dependable long-term protection for critical infrastructure
+                            and high-security environments.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <Link
+                    to="/about"
+                    className="about-btn"
+                >
+                    Learn More
+                </Link>
+
+            </div>
+
+        </section>
+    );
 }
 
 export default About;

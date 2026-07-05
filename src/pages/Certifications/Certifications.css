@@ -489,3 +489,12 @@
 #sirim{
     scroll-margin-top:120px;
 }
+.iso-card.clickable,
+.testing-card.clickable {
+    cursor: pointer;
+}
+
+.iso-card.clickable:hover,
+.testing-card.clickable:hover {
+    transform: translateY(-4px);
+}

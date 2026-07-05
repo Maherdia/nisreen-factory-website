@@ -1,3 +1,12 @@
+import AFCONS from "../assets/projects/AFCONS-KNPC.pdf";
+import ALLATIFIA from "../assets/projects/ALLATIFIA-BLASTDOORS.pdf";
+import BOURUQ from "../assets/projects/BOURUQ-ELSHARQIYA.pdf";
+
+
+
+
+
+
 const projects = [
 {
     project: "Prince Sultan Air Base, Al Kharj / King Fahad Air Base, Taif / King Abdulaziz Air Base, Dhahran",
@@ -85,6 +94,8 @@ const projects = [
     contractor: "Latifia Trading & Contracting",
     description: "Blast Bunker Doors",
     category: "Military",
+
+    pdf: ALLATIFIA,
 },
 
 {
@@ -117,6 +128,8 @@ const projects = [
     contractor: "Bouruq El Sharqiya",
     description: "Anti Blast Sliding Door",
     category: "Military",
+
+    pdf: BOURUQ,
 },
 
 {
@@ -125,6 +138,8 @@ const projects = [
     contractor: "Bouruq El Sharqiya",
     description: "Anti Blast Sliding Door",
     category: "Military",
+
+    pdf: BOURUQ,
 },
 
 {
@@ -164,6 +179,8 @@ const projects = [
     contractor: "Afcons Infrastructure Co.",
     description: "Blast Resistant Windows",
     category: "Industrial",
+
+    pdf: AFCONS,
 },
 
 {

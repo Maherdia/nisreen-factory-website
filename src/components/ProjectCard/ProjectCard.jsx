@@ -12,11 +12,22 @@ function ProjectCard({
     contractor,
     description,
     category,
+    pdf,
+    onOpenPdf,
 }) {
+
+    const handleClick = () => {
+        if (pdf && onOpenPdf) {
+            onOpenPdf(pdf);
+        }
+    };
 
     return (
 
-        <div className="project-card">
+        <div
+            className={`project-card ${pdf ? "clickable" : ""}`}
+            onClick={handleClick}
+        >
 
             <span className="project-category">
                 {category}
@@ -65,6 +76,14 @@ function ProjectCard({
                 <p>{description}</p>
 
             </div>
+
+            {pdf && (
+
+                <div className="approval-badge">
+                    📄 View Approval
+                </div>
+
+            )}
 
         </div>
 

@@ -207,3 +207,30 @@ html[dir="rtl"] .project-category{
     align-self:flex-end;
 
 }
+.project-card.clickable{
+
+    cursor:pointer;
+
+}
+
+.project-card.clickable:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.approval-badge{
+
+    margin-top:20px;
+
+    color:#C9A227;
+
+    font-weight:700;
+
+    text-align:right;
+
+    border-top:1px solid #eee;
+
+    padding-top:15px;
+
+}
