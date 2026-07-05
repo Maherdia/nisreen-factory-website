@@ -1,0 +1,46 @@
+.page-header{
+    position:relative;
+    height:45vh;
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.page-header-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.page-header-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:white;
+}
+
+.page-header-content h1{
+    font-size:54px;
+    margin-bottom:15px;
+}
+
+.page-header-content p{
+    font-size:18px;
+    color:#ddd;
+}
+
+@media(max-width:768px){
+
+.page-header{
+    height:35vh;
+}
+
+.page-header-content h1{
+    font-size:38px;
+}
+
+}

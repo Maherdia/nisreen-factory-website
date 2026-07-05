@@ -1,0 +1,220 @@
+.hero {
+
+    position: relative;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+.overlay {
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.25)
+    );
+
+}
+
+.hero-content {
+
+    position: relative;
+    z-index: 5;
+
+    color: white;
+
+    max-width: 720px;
+
+    margin-left: 8%;
+
+}
+
+.hero-subtitle {
+
+    display: inline-block;
+
+    color: #C9A227;
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+}
+
+.hero h1 {
+
+    font-size: 68px;
+    line-height: 1.05;
+
+    margin-bottom: 15px;
+
+    font-weight: 700;
+
+}
+
+.hero h2 {
+
+    color: #C9A227;
+
+    font-size: 34px;
+
+    margin-bottom: 30px;
+
+    font-weight: 500;
+
+}
+
+.hero p {
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: #ddd;
+
+    margin-bottom: 0;
+
+}
+
+/* Certifications */
+
+.certifications {
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 70px;
+
+    padding: 22px;
+
+    background: rgba(17,17,17,.85);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+
+    z-index: 5;
+
+}
+
+.certifications span {
+
+    color: #C9A227;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+}
+
+/* RTL SUPPORT */
+
+html[dir="rtl"] .hero-content {
+
+    margin-left: auto;
+    margin-right: 8%;
+
+    text-align: right;
+
+}
+
+html[dir="rtl"] .overlay {
+
+    background: linear-gradient(
+        270deg,
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.25)
+    );
+
+}
+
+html[dir="rtl"] .scroll-indicator {
+
+    right: auto;
+    left: 60px;
+
+}
+
+html[dir="rtl"] .hero-subtitle,
+html[dir="rtl"] .hero h1,
+html[dir="rtl"] .hero h2,
+html[dir="rtl"] .hero p {
+
+    direction: rtl;
+    text-align: right;
+
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media (max-width:1000px) {
+
+.hero {
+
+    background-attachment: scroll;
+
+}
+
+.hero-content {
+
+    margin: 40px;
+
+}
+
+html[dir="rtl"] .hero-content {
+
+    margin: 40px;
+
+}
+
+.hero h1 {
+
+    font-size: 46px;
+
+}
+.hero-subtitle {
+
+    color: #C9A227;
+
+}
+
+.hero h2 {
+
+    font-size: 24px;
+
+}
+
+.certifications {
+
+    display: none;
+
+}
+
+}

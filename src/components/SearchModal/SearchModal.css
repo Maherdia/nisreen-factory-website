@@ -1,0 +1,202 @@
+.search-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:transparent;
+
+    z-index:9999;
+
+}
+
+.search-modal{
+
+    position:absolute;
+
+    top:85px;
+
+    right:40px;
+
+    width:520px;
+
+    background:rgba(20,20,20,.65);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+    animation:searchDrop .25s ease;
+
+}
+
+@keyframes searchDrop{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.search-close{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    background:none;
+
+    border:none;
+
+    font-size:20px;
+
+    color:#fff;
+
+    cursor:pointer;
+
+}
+
+.search-input-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:22px 25px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.search-input-wrapper svg{
+
+    color:#C9A227;
+
+    font-size:18px;
+
+}
+
+.search-input-wrapper input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#fff;
+
+    font-size:20px;
+
+}
+
+.search-input-wrapper input::placeholder{
+
+    color:rgba(255,255,255,.65);
+
+}
+
+.search-results{
+
+    max-height:420px;
+
+    overflow-y:auto;
+
+}
+
+.search-result{
+
+    display:block;
+
+    padding:18px 25px;
+
+    text-decoration:none;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    transition:.25s;
+
+}
+
+.search-result:hover{
+
+    background:rgba(255,255,255,.06);
+
+}
+
+.search-result span{
+
+    display:block;
+
+    color:#C9A227;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:6px;
+
+}
+
+.search-result h4{
+
+    color:#fff;
+
+    font-size:18px;
+
+}
+
+.no-results{
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#ddd;
+
+}
+
+@media(max-width:768px){
+
+.search-modal{
+
+    width:calc(100% - 30px);
+
+    left:15px;
+
+    right:15px;
+
+    top:75px;
+
+}
+
+}
