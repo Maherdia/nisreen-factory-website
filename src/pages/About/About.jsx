@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
-import hero from "../../assets/images/factory.jpg";
+import hero from "../../assets/images/factory.png";
 import factory from "../../assets/logos/ssw.png";
 import { Link } from "react-router-dom";
 
@@ -236,8 +236,7 @@ function About() {
     </Link>
 
 </div>
-
-            </section>
+</section>
             <section className="about-cta">
 
                 <span className="section-tag">

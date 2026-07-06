@@ -7,9 +7,11 @@ import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import PdfModal from "../../components/PdfModal/PdfModal";
 
-import hero from "../../assets/images/factory.jpg";
+import hero from "../../assets/images/factory.png";
 
 import certificates from "../../data/certificates";
+import { Link } from "react-router-dom";
+
 
 function Certifications() {
 
@@ -84,21 +86,21 @@ function Certifications() {
 
                                         <div className="certificate-status">
 
-    {cert.pdfs.length ? (
+                                            {cert.pdfs.length ? (
 
-        <span className="certificate-badge">
-            📄 {cert.pdfs.length} {cert.pdfs.length === 1 ? "Report" : "Reports"}
-        </span>
+                                                <span className="certificate-badge">
+                                                    📄 {cert.pdfs.length} {cert.pdfs.length === 1 ? "Report" : "Reports"}
+                                                </span>
 
-    ) : (
+                                            ) : (
 
-        <span className="certificate-coming">
-            Coming Soon
-        </span>
+                                                <span className="certificate-coming">
+                                                    Coming Soon
+                                                </span>
 
-    )}
+                                            )}
 
-</div>
+                                        </div>
 
                                     </div>
 
@@ -136,21 +138,20 @@ function Certifications() {
 
                                     <div className="certificate-status">
 
-    {cert.pdfs.length ? (
+                                        {cert.pdfs.length ? (
 
-        <span className="certificate-badge">
-            📄 {cert.pdfs.length} {cert.pdfs.length === 1 ? "Report" : "Reports"}
-        </span>
+                                            <span className="certificate-badge">
+                                                📄 {cert.pdfs.length} {cert.pdfs.length === 1 ? "Report" : "Reports"}
+                                            </span>
+                                        )
+                                            :
+                                            (
+                                                <span className="certificate-coming">
+                                                    Coming Soon
+                                                </span>
+                                            )}
 
-    ) : (
-
-        <span className="certificate-coming">
-            Coming Soon
-        </span>
-
-    )}
-
-</div>
+                                    </div>
                                 </div>
 
                             ))}
@@ -160,7 +161,7 @@ function Certifications() {
                 </div>
 
             </section>
-                        <section className="testing">
+            <section className="testing">
 
                 <div className="testing-left">
 
@@ -195,24 +196,45 @@ function Certifications() {
 
             </section>
 
-            <section className="cert-industries">
+            <section id="quality" className="industries">
+
+                <span className="section-tag">
+                    INDUSTRIES WE SERVE
+                </span>
 
                 <h2>
-                    Industries We Support
+                    Trusted Across Critical Sectors
                 </h2>
 
                 <div className="industries-grid">
 
-                    <div>Government</div>
-                    <div>Military</div>
-                    <div>Oil & Gas</div>
-                    <div>Petrochemical</div>
-                    <div>Airports</div>
-                    <div>Critical Infrastructure</div>
+                    <Link to="/projects?filter=Government" className="industry">
+                        Government Buildings
+                    </Link>
+
+                    <Link to="/projects?filter=Military" className="industry">
+                        Military Facilities
+                    </Link>
+
+                    <Link to="/projects?filter=Industrial" className="industry">
+                        Oil & Gas
+                    </Link>
+
+                    <Link to="/projects?filter=Government" className="industry">
+                        Airports
+                    </Link>
+
+                    <Link to="/projects?filter=Commercial" className="industry">
+                        Commercial Buildings
+                    </Link>
+
+                    <Link to="/projects?filter=Industrial" className="industry">
+                        Critical Infrastructure
+                    </Link>
 
                 </div>
-
             </section>
+
 
             <section className="cert-cta">
 

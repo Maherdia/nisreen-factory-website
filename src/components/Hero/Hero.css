@@ -1,8 +1,10 @@
 .hero {
 
     position: relative;
+
     height: 100vh;
 
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -178,7 +180,11 @@ html[dir="rtl"] .hero p {
 
 .hero {
 
+    min-height: 100vh;
+    height: auto;
+
     background-attachment: scroll;
+    background-position: center center;
 
 }
 
@@ -199,6 +205,7 @@ html[dir="rtl"] .hero-content {
     font-size: 46px;
 
 }
+
 .hero-subtitle {
 
     color: #C9A227;
@@ -208,6 +215,12 @@ html[dir="rtl"] .hero-content {
 .hero h2 {
 
     font-size: 24px;
+
+}
+
+.hero p {
+
+    font-size: 16px;
 
 }
 

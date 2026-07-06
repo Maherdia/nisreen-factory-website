@@ -6,7 +6,7 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import ProductCard from "../../components/ProductCard/ProductCard";
 
-import hero from "../../assets/images/factory.jpg";
+import hero from "../../assets/images/factory.png";
 
 import products from "../../data/products";
 

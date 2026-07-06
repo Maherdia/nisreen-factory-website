@@ -10,7 +10,7 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import PdfModal from "../../components/PdfModal/PdfModal";
 
-import hero from "../../assets/images/factory.jpg";
+import hero from "../../assets/images/factory.png";
 import projects from "../../data/projects";
 
 function Projects() {

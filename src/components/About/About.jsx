@@ -2,20 +2,14 @@ import "./About.css";
 
 import { Link } from "react-router-dom";
 
-import factory from "../../assets/images/hero.jpg";
-
 function About() {
     return (
         <section className="about-section">
 
-            <div className="about-image">
-                <img src={factory} alt="SSW Factory" />
-            </div>
-
             <div className="about-content">
 
                 <h2>
-                    ABOUT SSW
+                    ABOUT NISREEN FACTORY (SSW)
                 </h2>
 
                 <div className="about-intro">

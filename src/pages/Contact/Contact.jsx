@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
-import hero from "../../assets/images/factory.jpg";
+import hero from "../../assets/images/factory.png";
 
 function Contact() {
 
