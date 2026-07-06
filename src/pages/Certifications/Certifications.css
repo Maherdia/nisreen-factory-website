@@ -223,6 +223,7 @@
     font-size:15px;
 
 }
+
 /* ======================================== */
 
 .testing{
@@ -429,7 +430,37 @@
 
 }
 
+/* ======================================== */
+/* Mobile */
+/* ======================================== */
+
 @media(max-width:768px){
+
+.cert-intro{
+
+    padding:70px 6% 50px;
+
+}
+
+.cert-intro h2{
+
+    font-size:2rem;
+
+    line-height:1.25;
+
+}
+
+.cert-intro p{
+
+    font-size:1rem;
+
+}
+
+.certifications-section{
+
+    padding:10px 6% 70px;
+
+}
 
 .iso-card{
 
@@ -437,11 +468,83 @@
 
     text-align:center;
 
+    padding:24px;
+
+    gap:20px;
+
 }
 
 .iso-card img{
 
-    width:180px;
+    width:150px;
+
+    height:80px;
+
+}
+
+.iso-card h3{
+
+    font-size:1.5rem;
+
+}
+
+.testing-title{
+
+    font-size:2rem;
+
+    margin-bottom:35px;
+
+}
+
+.testing-grid{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+.testing-card{
+
+    min-height:auto;
+
+    padding:24px;
+
+}
+
+.testing-card img{
+
+    width:140px;
+
+    height:75px;
+
+    margin-bottom:18px;
+
+}
+
+.testing-card h3{
+
+    font-size:1.3rem;
+
+}
+
+.testing{
+
+    padding:70px 6%;
+
+    gap:40px;
+
+}
+
+.testing-left{
+
+    text-align:center;
+
+}
+
+.testing-left h2{
+
+    font-size:2rem;
 
 }
 
@@ -451,32 +554,114 @@
 
 }
 
+.feature-card{
+
+    padding:22px;
+
+    font-size:.95rem;
+
+}
+
+.cert-industries{
+
+    padding:70px 6%;
+
+}
+
+.cert-industries h2{
+
+    font-size:2rem;
+
+    margin-bottom:35px;
+
+}
+
 .industries-grid{
 
     grid-template-columns:1fr;
 
-}
+    gap:16px;
 
 }
 
-@media(max-width:600px){
+.industries-grid div{
 
-.testing-grid{
+    padding:24px;
 
-    grid-template-columns:1fr;
+    font-size:1rem;
 
 }
 
-.cert-intro h2,
-.testing-left h2,
-.cert-industries h2,
+.cert-cta{
+
+    padding:70px 6%;
+
+}
+
 .cert-cta h2{
 
-    font-size:34px;
+    font-size:2rem;
+
+}
+
+.cert-cta p{
+
+    font-size:1rem;
+
+}
+
+.cert-cta .primary-btn{
+
+    width:100%;
+
+    max-width:320px;
 
 }
 
 }
+
+/* ======================================== */
+/* Small Phones */
+/* ======================================== */
+
+@media(max-width:480px){
+
+.cert-intro h2,
+
+.testing-title,
+
+.testing-left h2,
+
+.cert-industries h2,
+
+.cert-cta h2{
+
+    font-size:1.7rem;
+
+}
+
+.iso-card{
+
+    padding:20px;
+
+}
+
+.testing-card{
+
+    padding:20px;
+
+}
+
+.feature-card{
+
+    padding:18px;
+
+}
+
+}
+
+/* ======================================== */
+
 #iso9001,
 #iso45001,
 #intertek,
@@ -487,14 +672,21 @@
 #ara,
 #testex,
 #sirim{
+
     scroll-margin-top:120px;
+
 }
+
 .iso-card.clickable,
-.testing-card.clickable {
-    cursor: pointer;
+.testing-card.clickable{
+
+    cursor:pointer;
+
 }
 
 .iso-card.clickable:hover,
-.testing-card.clickable:hover {
-    transform: translateY(-4px);
+.testing-card.clickable:hover{
+
+    transform:translateY(-4px);
+
 }

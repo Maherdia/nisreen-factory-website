@@ -6,7 +6,8 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import ProductCard from "../../components/ProductCard/ProductCard";
 
-import hero from "../../assets/images/factory.png";
+import heroDesktop from "../../assets/images/hero.png";
+import heroMobile from "../../assets/images/hero-mobile.png";
 
 import products from "../../data/products";
 
@@ -20,7 +21,11 @@ function Products() {
             <PageHeader
                 title="Products"
                 subtitle="Advanced Security & Specialized Industrial Solutions"
-                image={hero}
+                image={
+                    window.innerWidth <= 1000
+                    ? heroMobile
+                    : heroDesktop
+                }
             />
 
             <section className="products-page">

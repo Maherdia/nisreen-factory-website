@@ -4,6 +4,9 @@ import {
     FaBuilding,
     FaHardHat,
     FaClipboardList,
+    FaCheckCircle,
+    FaFilePdf,
+    FaArrowRight,
 } from "react-icons/fa";
 
 function ProjectCard({
@@ -28,6 +31,18 @@ function ProjectCard({
             className={`project-card ${pdf ? "clickable" : ""}`}
             onClick={handleClick}
         >
+
+            {pdf && (
+
+                <div className="approval-status">
+
+                    <FaCheckCircle />
+
+                    <span>Approval</span>
+
+                </div>
+
+            )}
 
             <span className="project-category">
                 {category}
@@ -79,8 +94,18 @@ function ProjectCard({
 
             {pdf && (
 
-                <div className="approval-badge">
-                    📄 View Approval
+                <div className="project-footer">
+
+                    <div className="project-footer-left">
+
+                        <FaFilePdf />
+
+                        <span>View Approval Documents</span>
+
+                    </div>
+
+                    <FaArrowRight className="footer-arrow" />
+
                 </div>
 
             )}

@@ -4,7 +4,9 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
-import hero from "../../assets/images/factory.png";
+import heroDesktop from "../../assets/images/hero.png";
+import heroMobile from "../../assets/images/hero-mobile.png";
+
 import factory from "../../assets/logos/ssw.png";
 import { Link } from "react-router-dom";
 
@@ -16,7 +18,10 @@ function About() {
             <PageHeader
                 title="About Special & Safety Work"
                 subtitle="Engineering Security Solutions for Critical Infrastructure"
-                image={hero}
+                image={
+                    window.innerWidth <= 1000
+                    ? heroMobile
+                    : heroDesktop }
             />
 
             <section id="company" className="about-company">

@@ -4,7 +4,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
-import hero from "../../assets/images/factory.png";
+import heroDesktop from "../../assets/images/hero.png";
+import heroMobile from "../../assets/images/hero-mobile.png";
 
 function Contact() {
 
@@ -17,7 +18,10 @@ function Contact() {
             <PageHeader
                 title="Contact Us"
                 subtitle="Let's Discuss Your Security & Engineering Requirements"
-                image={hero}
+                image={
+                    window.innerWidth <= 1000
+                    ? heroMobile
+                    : heroDesktop }
             />
 
             {/* HERO */}

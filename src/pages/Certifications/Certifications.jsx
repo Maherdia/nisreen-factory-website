@@ -7,7 +7,8 @@ import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import PdfModal from "../../components/PdfModal/PdfModal";
 
-import hero from "../../assets/images/factory.png";
+import heroDesktop from "../../assets/images/hero.png";
+import heroMobile from "../../assets/images/hero-mobile.png";
 
 import certificates from "../../data/certificates";
 import { Link } from "react-router-dom";
@@ -37,7 +38,10 @@ function Certifications() {
             <PageHeader
                 title="Certifications"
                 subtitle="Certified Quality. Proven Performance."
-                image={hero}
+                image={
+                    window.innerWidth <= 1000
+                    ? heroMobile
+                    : heroDesktop }
             />
 
             <section className="cert-intro">

@@ -10,7 +10,9 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import PdfModal from "../../components/PdfModal/PdfModal";
 
-import hero from "../../assets/images/factory.png";
+import heroDesktop from "../../assets/images/hero.png";
+import heroMobile from "../../assets/images/hero-mobile.png";
+
 import projects from "../../data/projects";
 
 function Projects() {
@@ -56,7 +58,11 @@ function Projects() {
             <PageHeader
                 title="Projects"
                 subtitle="Projects Successfully Delivered Across Multiple Sectors"
-                image={hero}
+                image={
+                    window.innerWidth <= 1000
+                    ? heroMobile
+                    : heroDesktop
+                }
             />
 
             <section className="projects-page">
