@@ -108,12 +108,15 @@ function About() {
 
                 </div>
 
-                <Link
+                <div className="about-btn-wrapper">
+
+                   <Link
                     to="/about"
-                    className="about-btn"
-                >
+                     className="about-btn" >
                     Learn More
-                </Link>
+                    </Link>
+
+                </div>
 
             </div>
 

@@ -1,15 +1,15 @@
-import blastResistantDoor from "../assets/products/BlastResistant-Doors.jpg";
+import blastResistantDoor from "../assets/products/BlastResistant-Doors.jpeg";
 import bulletproofDoor from "../assets/products/Bulletproof-Door.jpg";
-import SecurityDoors from "../assets/products/Security-Doors.jpg";
+import SecurityDoors from "../assets/products/Security-Doors.jpeg";
 import shieldDoor from "../assets/products/Shield-Doors.jpg";
 import vaultDoor from "../assets/products/Vault-Doors.webp";
 import hangarDoor from "../assets/products/Hangar-Doors.jpg";
 import elephantDoor from "../assets/products/Elephant-Doors.jpg";
-import blowOutDoor from "../assets/products/BlowOut-Door.jpg";
+import blowOutDoor from "../assets/products/BlowOut-Door.jpeg";
 import acousticalDoor from "../assets/products/Acoustical-Doors.jpg";
-import thermalDoor from "../assets/products/Thermal-Doors.avif";
+import thermalDoor from "../assets/products/Thermal-Doors.jpeg";
 import xrayDoor from "../assets/products/XRay-Doors.webp";
-import slidingGate from "../assets/products/Sliding-Gates.png";
+import slidingGate from "../assets/products/Sliding-Gates.jpeg";
 import DecorativeDoor from "../assets/products/Decorative-Doors.jpg";
 import BookStoreDoors from "../assets/products/BookStore-Doors.jpg";
 import prisonDoor from "../assets/products/Prison-Doors.jpg";
@@ -37,7 +37,7 @@ import spaceFrames from "../assets/products/Space-Frames.jpg";
 import garbageChutes from "../assets/products/Garbage-Chutes.jpg";
 import MotorizedDampers from "../assets/products/MotorizedDampers-Louvers.jpg";
 import ConcreteMoldings from "../assets/products/Concrete-Molds.webp";
-import SteelFences from "../assets/products/Steel-Fences.jpg";
+import SteelFences from "../assets/products/Steel-Fences.jpeg";
 import PlateForms from "../assets/products/Plate-Forms.png";
 import BlastResistantValves from "../assets/products/BlastResistant-Valves.jpg";
 
@@ -45,7 +45,7 @@ import digitalLocks from "../assets/products/Digital-Locks.webp";
 import rollUpShutters from "../assets/products/RollUp-Shutters.jpg";
 import shelterSystems from "../assets/products/Shelter-Systems.webp";
 import tireKillers from "../assets/products/Tire-Killers.jpg";
-import slidingGates from "../assets/products/Sliding-Gates.png";
+import slidingGates from "../assets/products/Sliding-Gates.jpeg";
 import collapsibleGates from "../assets/products/Collapsible-Gates.jpg";
 export default {
 
