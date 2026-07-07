@@ -113,7 +113,7 @@ function About() {
                    <Link
                     to="/about"
                      className="about-btn" >
-                    Learn More
+                    LEARN MORE
                     </Link>
 
                 </div>

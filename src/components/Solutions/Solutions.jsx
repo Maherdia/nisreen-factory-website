@@ -88,7 +88,7 @@ function Solutions() {
                 <div className="solutions-btn">
 
                    <Link to="/products" className="primary-btn">
-                   View All Products
+                   VIEW ALL PRODUCTS
                     </Link>
 
                 </div>

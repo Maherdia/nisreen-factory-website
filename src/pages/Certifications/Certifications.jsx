@@ -7,9 +7,6 @@ import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import PdfModal from "../../components/PdfModal/PdfModal";
 
-import heroDesktop from "../../assets/images/hero.png";
-import heroMobile from "../../assets/images/hero-mobile.png";
-
 import certificates from "../../data/certificates";
 import { Link } from "react-router-dom";
 
@@ -36,12 +33,8 @@ function Certifications() {
             <Navbar />
 
             <PageHeader
-                title="Certifications"
-                subtitle="Certified Quality. Proven Performance."
-                image={
-                    window.innerWidth <= 1000
-                    ? heroMobile
-                    : heroDesktop }
+                title="CERTIFICATIONS"
+                subtitle="TESTED. CERTIFIED. TRUSTED."
             />
 
             <section className="cert-intro">
@@ -254,7 +247,7 @@ function Certifications() {
                     href="/contact"
                     className="primary-btn"
                 >
-                    Contact Us
+                    CONTACT US
                 </a>
 
             </section>

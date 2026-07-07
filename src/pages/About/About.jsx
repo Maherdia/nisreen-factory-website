@@ -4,9 +4,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
-import heroDesktop from "../../assets/images/hero.png";
-import heroMobile from "../../assets/images/hero-mobile.png";
-
 import factory from "../../assets/logos/ssw.png";
 import { Link } from "react-router-dom";
 
@@ -16,12 +13,8 @@ function About() {
             <Navbar />
 
             <PageHeader
-                title="About Special & Safety Work"
-                subtitle="Engineering Security Solutions for Critical Infrastructure"
-                image={
-                    window.innerWidth <= 1000
-                    ? heroMobile
-                    : heroDesktop }
+                title="ABOUT SPECIAL & SAFETY WORK"
+                subtitle="ENGINEERING SECURITY SOLUTIONS SINCE 2011"
             />
 
             <section id="company" className="about-company">
@@ -216,32 +209,32 @@ function About() {
 
                 <div className="industries-grid">
 
-    <Link to="/projects?filter=Government" className="industry">
-        Government Buildings
-    </Link>
+                    <Link to="/projects?filter=Government" className="industry">
+                        Government Buildings
+                    </Link>
 
-    <Link to="/projects?filter=Military" className="industry">
-        Military Facilities
-    </Link>
+                    <Link to="/projects?filter=Military" className="industry">
+                        Military Facilities
+                    </Link>
 
-    <Link to="/projects?filter=Industrial" className="industry">
-        Oil & Gas
-    </Link>
+                    <Link to="/projects?filter=Industrial" className="industry">
+                        Oil & Gas
+                    </Link>
 
-    <Link to="/projects?filter=Government" className="industry">
-        Airports
-    </Link>
+                    <Link to="/projects?filter=Government" className="industry">
+                        Airports
+                    </Link>
 
-    <Link to="/projects?filter=Commercial" className="industry">
-        Commercial Buildings
-    </Link>
+                    <Link to="/projects?filter=Commercial" className="industry">
+                        Commercial Buildings
+                    </Link>
 
-    <Link to="/projects?filter=Industrial" className="industry">
-        Critical Infrastructure
-    </Link>
+                    <Link to="/projects?filter=Industrial" className="industry">
+                        Critical Infrastructure
+                    </Link>
 
-</div>
-</section>
+                </div>
+            </section>
             <section className="about-cta">
 
                 <span className="section-tag">
@@ -260,7 +253,7 @@ function About() {
                     href="/contact"
                     className="primary-btn"
                 >
-                    Contact Us
+                    CONTACT US
                 </a>
 
             </section>

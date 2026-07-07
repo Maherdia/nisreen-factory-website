@@ -10,9 +10,6 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import PdfModal from "../../components/PdfModal/PdfModal";
 
-import heroDesktop from "../../assets/images/hero.png";
-import heroMobile from "../../assets/images/hero-mobile.png";
-
 import projects from "../../data/projects";
 
 function Projects() {
@@ -56,19 +53,14 @@ function Projects() {
             <Navbar />
 
             <PageHeader
-                title="Projects"
-                subtitle="Projects Successfully Delivered Across Multiple Sectors"
-                image={
-                    window.innerWidth <= 1000
-                    ? heroMobile
-                    : heroDesktop
-                }
+                title="PROJECTS & REFERENCES"
+                subtitle="PROVEN ACROSS CRITICAL PROJECTS"
             />
 
             <section className="projects-page">
 
                 <SectionTitle
-                    tag="PROJECT PORTFOLIO"
+                    tag="PROJECTS PORTFOLIO"
                     title="Selected Projects"
                     description="Special & Safety Work has successfully delivered security and industrial solutions for military, government, commercial and industrial facilities."
                 />

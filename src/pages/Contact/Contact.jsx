@@ -4,9 +4,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
-import heroDesktop from "../../assets/images/hero.png";
-import heroMobile from "../../assets/images/hero-mobile.png";
-
 function Contact() {
 
     return (
@@ -16,12 +13,8 @@ function Contact() {
             <Navbar />
 
             <PageHeader
-                title="Contact Us"
-                subtitle="Let's Discuss Your Security & Engineering Requirements"
-                image={
-                    window.innerWidth <= 1000
-                    ? heroMobile
-                    : heroDesktop }
+                title="CONTACT US"
+                subtitle="LET'S DISCUSS YOUR PROJECT"
             />
 
             {/* HERO */}
@@ -48,14 +41,14 @@ function Contact() {
                         href="tel:+966596688787"
                         className="primary-btn"
                     >
-                        Call Us
+                        CALL US
                     </a>
 
                     <a
                         href="mailto:info@nisreenfactory.com"
                         className="primary-btn"
                     >
-                        Email Us
+                        EMAIL US
                     </a>
 
                 </div>
@@ -99,7 +92,7 @@ function Contact() {
                 </div>
 
             </section>
-            
+
             {/* MAP */}
 
             <section className="map-section">
@@ -119,18 +112,18 @@ function Contact() {
                 </p>
 
                 <div className="map-placeholder">
- 
-            <section className="contact-map">
 
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7256.250616553204!2d46.8287857!3d24.5848713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2fa75b14ffcd9f%3A0x68f51d01e1788a00!2sSpecial%20and%20Safety%20Work%20Nisreen%20Factory!5e0!3m2!1sen!2ssa!4v1782894217255!5m2!1sen!2ssa"
-                    title="Special & Safety Work Location"
-                    loading="lazy"
-                    allowFullScreen
-                    referrerPolicy="strict-origin-when-cross-origin"
-                ></iframe>
+                    <section className="contact-map">
 
-            </section>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7256.250616553204!2d46.8287857!3d24.5848713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2fa75b14ffcd9f%3A0x68f51d01e1788a00!2sSpecial%20and%20Safety%20Work%20Nisreen%20Factory!5e0!3m2!1sen!2ssa!4v1782894217255!5m2!1sen!2ssa"
+                            title="Special & Safety Work Location"
+                            loading="lazy"
+                            allowFullScreen
+                            referrerPolicy="strict-origin-when-cross-origin"
+                        ></iframe>
+
+                    </section>
 
 
                 </div>
@@ -256,20 +249,20 @@ function Contact() {
                         href="tel:+966596688787"
                         className="primary-btn"
                     >
-                        Call Us
+                        CALL US
                     </a>
 
                     <a
                         href="mailto:info@nisreenfactory.com"
                         className="primary-btn"
                     >
-                        Email Us
+                        EMAIL US
                     </a>
 
                 </div>
 
             </section>
-           
+
             <Footer />
 
         </>

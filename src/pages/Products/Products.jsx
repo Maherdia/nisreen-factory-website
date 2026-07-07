@@ -6,9 +6,6 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import ProductCard from "../../components/ProductCard/ProductCard";
 
-import heroDesktop from "../../assets/images/hero.png";
-import heroMobile from "../../assets/images/hero-mobile.png";
-
 import products from "../../data/products";
 
 function Products() {
@@ -19,19 +16,14 @@ function Products() {
             <Navbar />
 
             <PageHeader
-                title="Products"
-                subtitle="Advanced Security & Specialized Industrial Solutions"
-                image={
-                    window.innerWidth <= 1000
-                    ? heroMobile
-                    : heroDesktop
-                }
+                title="SECURITY PRODUCTS"
+                subtitle="PROTECTION SOLUTIONS"
             />
 
             <section className="products-page">
 
                 <SectionTitle
-                    tag="PRODUCT RANGE"A
+                    tag="PRODUCTS RANGE" A
                     title="Engineered Security Products"
                     description="Special & Safety Work manufactures a comprehensive range of security products, industrial steel solutions and engineered systems for military, governmental, commercial and industrial projects."
                 />
@@ -49,11 +41,11 @@ function Products() {
                         {products.securityDoors.map((product, index) => (
 
                             <div id={product.id} key={index}>
-                            <ProductCard
-                             image={product.image}
-                             title={product.title}
-                             description={product.description}
-                            />
+                                <ProductCard
+                                    image={product.image}
+                                    title={product.title}
+                                    description={product.description}
+                                />
                             </div>
 
                         ))}
@@ -181,14 +173,14 @@ function Products() {
                         href="/contact"
                         className="primary-btn"
                     >
-                        Contact Us
+                        CONTACT US
                     </a>
 
                 </section>
 
             </section>
 
-<Footer />
+            <Footer />
 
         </>
 
