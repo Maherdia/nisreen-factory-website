@@ -13,6 +13,7 @@ import intertekAssembly2 from "../assets/certificates/intertec-hatchdoor-assembl
 import intertekBallistics from "../assets/certificates/Intertek-ballistics.pdf";
 import iso9001Pdf from "../assets/certificates/iso-9001-2015.pdf";
 import iso45001Pdf from "../assets/certificates/iso-45001-2018.pdf";
+import tuvPdf from "../assets/certificates/tuv-nord-certificate.pdf";
 
 const certificates = [
 
@@ -90,7 +91,12 @@ const certificates = [
         id: 7,
         name: "TÜV NORD",
         image: tuv,
-        pdfs: [],
+        pdfs: [
+            {
+                title: "TÜV NORD Certificate",
+                file: tuvPdf,
+            },
+        ],
     },
 
     {
