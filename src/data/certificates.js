@@ -8,12 +8,26 @@ import tuv from "../assets/certificates/tuv-nord.webp";
 import joddb from "../assets/certificates/joddb.png";
 import testex from "../assets/certificates/testex.png";
 
+import intertekPdf from "../assets/certificates/Intertek.pdf";
 import intertekAssembly1 from "../assets/certificates/intertec-hatchdoor-assembly.pdf";
 import intertekAssembly2 from "../assets/certificates/intertec-hatchdoor-assembly2.pdf";
 import intertekBallistics from "../assets/certificates/Intertek-ballistics.pdf";
 import iso9001Pdf from "../assets/certificates/iso-9001-2015.pdf";
 import iso45001Pdf from "../assets/certificates/iso-45001-2018.pdf";
 import tuvPdf from "../assets/certificates/tuv-nord-certificate.pdf";
+import joddbSkm from "../assets/certificates/JODDB-SKM.pdf";
+import joddbSkm2 from "../assets/certificates/JODDB-SKM2.pdf";
+import joddbTest1 from "../assets/certificates/JODDB-TestReport.pdf";
+import joddbTest2 from "../assets/certificates/JODDB-TestReport2.pdf";
+import joodbLevel3 from "../assets/certificates/JOODB-level3-UNiglass.pdf";
+import dnvApprovedDrawing from "../assets/certificates/DNV-ApprovedDrawing.pdf";
+import dnvBlastDoor from "../assets/certificates/DNV-BlastDoor.pdf";
+import dnvBlastDoor10Bar from "../assets/certificates/DNV-BlastDoor-10Bar.pdf";
+import dnvBlastSlidingDoor from "../assets/certificates/DNV-BlastSlidingDoor-2bar.pdf";
+import dnvBlastWindow from "../assets/certificates/DNV-BlastWindowReport.pdf";
+import dnvBlowOutPanel from "../assets/certificates/DNV-BlowOutPanel.pdf";
+import dnvSecurityWindow from "../assets/certificates/DNV-SecurityWindow.pdf";
+
 
 const certificates = [
 
@@ -22,7 +36,7 @@ const certificates = [
         name: "ARA",
         image: ara,
 
-        pdfs:[],
+        pdfs: [],
     },
 
     {
@@ -30,7 +44,36 @@ const certificates = [
         name: "DNV",
         image: dnv,
 
-        pdfs: [],
+        pdfs: [
+            {
+                title: "Blast Door",
+                file: dnvBlastDoor,
+            },
+            {
+                title: "Blast Door (10 Bar)",
+                file: dnvBlastDoor10Bar,
+            },
+            {
+                title: "Blast Sliding Door (2 Bar)",
+                file: dnvBlastSlidingDoor,
+            },
+            {
+                title: "Blast Window Report",
+                file: dnvBlastWindow,
+            },
+            {
+                title: "Security Window",
+                file: dnvSecurityWindow,
+            },
+            {
+                title: "Blow Out Panel",
+                file: dnvBlowOutPanel,
+            },
+            {
+                title: "Approved Drawing",
+                file: dnvApprovedDrawing,
+            },
+        ],
     },
 
     {
@@ -39,6 +82,10 @@ const certificates = [
         image: intertek,
 
         pdfs: [
+            {
+                title: "Intertek Certificate",
+                file: intertekPdf,
+            },
             {
                 title: "Ballistics Test",
                 file: intertekBallistics,
@@ -84,6 +131,7 @@ const certificates = [
         id: 6,
         name: "SIRIM QAS",
         image: sirim,
+
         pdfs: [],
     },
 
@@ -91,6 +139,7 @@ const certificates = [
         id: 7,
         name: "TÜV NORD",
         image: tuv,
+
         pdfs: [
             {
                 title: "TÜV NORD Certificate",
@@ -103,13 +152,36 @@ const certificates = [
         id: 8,
         name: "JODDB",
         image: joddb,
-        pdfs: [],
+
+        pdfs: [
+            {
+                title: "Level III U-Niglass",
+                file: joodbLevel3,
+            },
+            {
+                title: "SKM",
+                file: joddbSkm,
+            },
+            {
+                title: "SKM 2",
+                file: joddbSkm2,
+            },
+            {
+                title: "Test Report",
+                file: joddbTest1,
+            },
+            {
+                title: "Test Report 2",
+                file: joddbTest2,
+            },
+        ],
     },
 
     {
         id: 9,
         name: "TESTEX",
         image: testex,
+
         pdfs: [],
     },
 
