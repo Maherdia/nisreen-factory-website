@@ -33,10 +33,10 @@ function About() {
                     </h2>
 
                     <p>
-                        Nisreen Factory (Special & Safety Work) is a Saudi manufacturer
-                        specializing in advanced engineered security doors and protection
-                        systems for government, military, industrial, commercial and
-                        infrastructure projects.
+                        <strong>Nisreen Factory (Special &amp; Safety Work)</strong>, a member of
+                        <strong> Saudi Etqaan Group</strong>, is a Saudi manufacturer specializing in
+                        advanced engineered security doors and protection systems for government,
+                        military, industrial, commercial and infrastructure projects.
                     </p>
 
                     <p>

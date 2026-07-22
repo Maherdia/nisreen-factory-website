@@ -27,6 +27,9 @@ function Footer() {
             government, military, oil &amp; gas, petrochemical, commercial and
             critical infrastructure facilities.
           </p>
+          <p className="footer-group">
+            A Member of Saudi Etqaan Group
+          </p>
         </div>
 
         <div className="footer-column">

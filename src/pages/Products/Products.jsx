@@ -23,7 +23,7 @@ function Products() {
             <section className="products-page">
 
                 <SectionTitle
-                    tag="PRODUCTS RANGE" A
+                    tag="PRODUCTS RANGE"
                     title="Engineered Security Products"
                     description="Special & Safety Work manufactures a comprehensive range of security products, industrial steel solutions and engineered systems for military, governmental, commercial and industrial projects."
                 />

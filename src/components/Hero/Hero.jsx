@@ -29,9 +29,10 @@ function Hero() {
         </h2>
 
         <p>
-          SSW is a leading Saudi manufacturer specializing in blast resistant,
-          bullet resistant, fire rated and custom engineered security solutions
-          for military, industrial, commercial and government sectors.
+          SSW, a member of <strong>Saudi Etqaan Group</strong>, is a leading Saudi
+          manufacturer specializing in blast-resistant, bullet-resistant, fire-rated
+          and custom-engineered security solutions for military, industrial,
+          commercial and government sectors.
         </p>
 
       </div>

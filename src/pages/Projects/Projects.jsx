@@ -8,7 +8,6 @@ import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import PdfModal from "../../components/PdfModal/PdfModal";
 
 import projects from "../../data/projects";
 
@@ -18,7 +17,6 @@ function Projects() {
     const navigate = useNavigate();
 
     const [selectedCategory, setSelectedCategory] = useState("All");
-    const [activePdf, setActivePdf] = useState(null);
 
     const categories = [
         "All",
@@ -73,18 +71,18 @@ function Projects() {
                     </div>
 
                     <div className="stat">
-                        <h2>15+</h2>
-                        <span>Years Experience</span>
+                        <h2>4</h2>
+                        <span>Project Sectors</span>
                     </div>
 
                     <div className="stat">
-                        <h2>5</h2>
-                        <span>Business Sectors</span>
+                        <h2>GCC</h2>
+                        <span>Regional Project Reach</span>
                     </div>
 
                     <div className="stat">
-                        <h2>100%</h2>
-                        <span>Custom Solutions</span>
+                        <h2>SSW</h2>
+                        <span>Custom Engineering</span>
                     </div>
 
                 </div>
@@ -126,8 +124,6 @@ function Projects() {
                             contractor={project.contractor}
                             description={project.description}
                             category={project.category}
-                            pdf={project.pdf}
-                            onOpenPdf={setActivePdf}
                         />
 
                     ))}
@@ -135,13 +131,6 @@ function Projects() {
                 </div>
 
             </section>
-
-            <PdfModal
-                isOpen={!!activePdf}
-                title="Project Approval"
-                pdf={activePdf}
-                onClose={() => setActivePdf(null)}
-            />
 
             <Footer />
         </>

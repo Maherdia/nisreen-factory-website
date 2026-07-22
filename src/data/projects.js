@@ -1,182 +1,40 @@
-import afconsKnpc from "../assets/projects/afcons-knpc.pdf";
-import alArrabKap2Approval from "../assets/projects/al-arrab-kap2-approval.pdf";
-import alBawaniBlastBulletDoorsWindowsApproval from "../assets/projects/al-bawani-blast-bullet-doors-windows-approval.pdf";
-import alBawaniPrequalification from "../assets/projects/al-bawani-prequalification.pdf";
-import alBawaniRoadBlockerApproval from "../assets/projects/al-bawani-road-blocker-approval.pdf";
-import alBenatSlidingDoorApproval from "../assets/projects/al-benat-sliding-door-approval.pdf";
-import alJabreenMaterialApproval from "../assets/projects/al-jabreen-material-approval.pdf";
-import alJabreenRoadBlockerApproval from "../assets/projects/al-jabreen-road-blocker-approval.pdf";
-import allatifiaBlastDoors from "../assets/projects/allatifia-blastdoors.pdf";
-import bouruqElSharqiya from "../assets/projects/bouruq-elsharqiya.pdf";
-import cscecAccessDoorApproval from "../assets/projects/cscec-access-door-approval.pdf";
-import mofaBlastBulletDoorsWindowsApproval from "../assets/projects/mofa-blast-bullet-doors-windows-approval.pdf";
-import patriotTestingReport from "../assets/projects/patriot-testing-report.pdf";
-import redSeaGlobalAmaalaApproval from "../assets/projects/red-sea-global-amaala-approval.pdf";
-import saudiAramcoKacwcVisionPanelsApproval from "../assets/projects/saudi-aramco-kacwc-vision-panels-approval.pdf";
-import kap3steelgate from "../assets/projects/kap3-steelgate-saud-ibinladen.pdf";
-import saudibinladenshelterdoors from "../assets/projects/saudi-binladen-shelterdoor.pdf";
-import moisouthborder from "../assets/projects/moi-south-border-approval.pdf";
-
-
-
-
 const projects = [
-    {
-        project: "Prince Sultan Air Base, Al Kharj / King Fahad Air Base, Taif / King Abdulaziz Air Base, Dhahran",
-        client: "Ministry of Defence and Aviation",
-        contractor: "Al Bawani General Contracting",
-        description: "Blast Resistant Swing & Sliding Doors",
-        category: "Military",
-        pdf: alBawaniBlastBulletDoorsWindowsApproval,
-    },
-
-    {
-        project: "MOFA Diplomatic Institute",
-        client: "Ministry of Foreign Affairs",
-        contractor: "Al Bawani General Contracting",
-        description: "Bullet Proof & Blast Proof Doors and Windows",
-        category: "Government",
-        pdf: mofaBlastBulletDoorsWindowsApproval,
-    },
-
-    {
-        project: "30 Bunkers, Al Hasa",
-        client: "Saudi Arabian National Guard",
-        contractor: "Latifia Trading & Contracting",
-        description: "Blast Bunker Doors",
-        category: "Military",
-
-        pdf: allatifiaBlastDoors,
-    },
-
-    {
-        project: "Igloo Store 1/6/138",
-        client: "Ministry of Defence and Aviation",
-        contractor: "Bouruq El Sharqiya",
-        description: "Anti Blast Sliding Door",
-        category: "Military",
-
-        pdf: bouruqElSharqiya,
-    },
-
-    {
-        project: "Patriot Missile Storage",
-        client: "Ministry of Defence and Aviation",
-        contractor: "Bouruq El Sharqiya",
-        description: "Anti Blast Sliding Door",
-        category: "Military",
-
-        pdf: patriotTestingReport,
-    },
-
-    {
-        project: "KNPC Sulphur Handling Facilities",
-        client: "Daelim Korea",
-        contractor: "Afcons Infrastructure Co.",
-        description: "Blast Resistant Windows",
-        category: "Industrial",
-
-        pdf: afconsKnpc,
-    },
-
-    {
-        project: "Diriyah Gate Infrastructure Construction General Contractor",
-        client: "Diriyah Gate Company Limited (DGCL)",
-        contractor: "ESEC - CSCEC JV",
-        description: "Access Door",
-        category: "Government",
-        pdf: cscecAccessDoorApproval,
-    },
-
-    {
-        project: "Military Maintenance Facilities - Rimah & Tabuk",
-        client: "Al Bawani Company Ltd.",
-        contractor: "Al Bawani Company Ltd.",
-        description: "Road Blockers",
-        category: "Military",
-        pdf: alBawaniRoadBlockerApproval,
-    },
-
-    {
-        project: "King Saud Air Base - KKMC",
-        client: "Ministry of Defence and Aviation",
-        contractor: "Al Jabreen Contracting",
-        description: "Road Blockers & Bullet Resistant Windows",
-        category: "Military",
-        pdf: alJabreenRoadBlockerApproval,
-    },
-
-    {
-        project: "Northern Region Tactical Areas - Hafr Al Batin",
-        client: "Ministry of Defence and Aviation",
-        contractor: "Al Jabreen Contracting",
-        description: "Watch Towers & Reinforced Sliding Gates",
-        category: "Military",
-        pdf: alJabreenMaterialApproval,
-    },
-
-    {
-        project: "Red Sea Global Development",
-        client: "Red Sea Global",
-        contractor: "Saudi Binladin Group",
-        description: "Fire Rated Doors & Security Doors",
-        category: "Commercial",
-        pdf: redSeaGlobalAmaalaApproval,
-    },
-
-    {
-        project: "KING ABDULAZIZ CENTER FOR WORLD CULTURE PROJECT",
-        client: "Saudi Aramco",
-        contractor: "Saudi Oger Limited",
-        description: "Glass Vision Panels",
-        category: "Industrial",
-        pdf: saudiAramcoKacwcVisionPanelsApproval,
-    },
-
-    {
-        project: "Ministry of Foreign Affairs",
-        client: "Al Bawani Company",
-        contractor: "Buro Happold Engineering",
-        description: "Bullet Proof Doors and Windows",
-        category: "Material Approval",
-        pdf: alBawaniPrequalification,
-    },
-
-    {
-        project: "Ammunition Warehouse",
-        client: "Ministry of Defence/GDMW",
-        contractor: "Al Benat Contracting Company",
-        description: "Anti Blast Sliding Doors",
-        category: "Material Approval",
-        pdf: alBenatSlidingDoorApproval,
-    },
-
-    {
-        project: "KAP-3 Security Facilities",
-        client: "Ministry of Interior",
-        contractor: "Saudi Binladin Group",
-        description: "Security Steel Gate",
-        category: "Government",
-        pdf: kap3steelgate,
-    },
-
-    {
-        project: "South Border Security Fence",
-        client: "Ministry of Interior",
-        contractor: "Saudi Binladin Group",
-        description: "Bullet Proof Steel Doors",
-        category: "Government",
-        pdf: moisouthborder,
-    },
-
-    {
-        project: "Military Shelter Facilities",
-        client: "Saudi Binladin Group",
-        contractor: "Saudi Binladin Group",
-        description: "Blast Resistant Shelter Doors",
-        category: "Military",
-        pdf: saudibinladenshelterdoors,
-    },
-
+  { project: "Haram Project, Makkah", client: "Saudi Binladin Group", contractor: "Saudi Binladin Group", description: "Fire Rated Access Hatch", category: "Commercial" },
+  { project: "Jeddah Waterfront", client: "Rotana Waterfront", contractor: "Rotana Waterfront", description: "Street Sign Structure", category: "Commercial" },
+  { project: "Saudi Embassy, Budapest", client: "Saudi Embassy", contractor: "Hyoon Security Systems", description: "Security Systems and Protective Metalwork", category: "Government" },
+  { project: "Saudi Embassy, Baku", client: "Saudi Embassy", contractor: "Hyoon Security Systems", description: "Security Systems and Protective Metalwork", category: "Government" },
+  { project: "KAP 2B — Arar and Al Jouf", client: "Government Security Facilities", contractor: "Al Arrab Contracting", description: "Special Security Metalwork", category: "Government" },
+  { project: "King Salman Park, Riyadh", client: "King Salman Park", contractor: "Nesma & Partners", description: "Steel Structure and Aluminium Ladders", category: "Commercial" },
+  { project: "Najran BSP", client: "SEC", contractor: "Fire and Hazard", description: "NIJ Level III Doors and Windows", category: "Industrial" },
+  { project: "Ar Rass 2 and Al Kahfah PV Solar Project", client: "PV Solar Project", contractor: "Fire and Hazard", description: "Protective Doors and Metalwork", category: "Industrial" },
+  { project: "Bulletproof Door Project", client: "Khalid Khazal Industries", contractor: "Khalid Khazal Industries", description: "Bulletproof Doors", category: "Industrial" },
+  { project: "Layla PV Solar Project, Al Aflaj", client: "PV Solar Project", contractor: "Wafaq Contracting Company", description: "Special Metalwork", category: "Industrial" },
+  { project: "National Cyber Security Authority, Riyadh", client: "National Cyber Security Authority", contractor: "NCA Project Team", description: "BR3 Bullet Resistant Doors and Windows", category: "Government" },
+  { project: "Masar Project, Makkah", client: "Masar Development", contractor: "Nesma & Partners", description: "Special Steel Works", category: "Commercial" },
+  { project: "Zallal Bujairi Project, Diriyah", client: "Diriyah Development", contractor: "Nesma & Partners", description: "Special Steel Works", category: "Commercial" },
+  { project: "Diriyah Development Infrastructure", client: "Diriyah Development", contractor: "China State Construction CSCEC", description: "Infrastructure Metalwork", category: "Commercial" },
+  { project: "Diriyah Project", client: "Diriyah Development", contractor: "Saudi Real Estate Infrastructure Binyah", description: "Infrastructure Metalwork", category: "Commercial" },
+  { project: "Tatweer Towers, Olaya", client: "Tatweer Towers", contractor: "4 Solutions Company", description: "Bulletproof Door", category: "Commercial" },
+  { project: "Etlal Residence Tower", client: "Zamil Group Real Estate Company", contractor: "Zamil Group", description: "Fire Rated Door", category: "Commercial" },
+  { project: "KAP 2B — Sites 13 and 17", client: "Government Security Facilities", contractor: "Al Arrab Contracting", description: "Sliding Gates", category: "Government" },
+  { project: "KAP 2A Watch Tower", client: "Government Security Facilities", contractor: "El Seif Engineering", description: "Shooting Windows", category: "Government" },
+  { project: "Ministry of Defence, Al Kharj", client: "Ministry of Defence", contractor: "Naif Aborayash Trading & Contracting", description: "Protective Security Metalwork", category: "Military" },
+  { project: "Al Kharj Ammunition Storage", client: "Ministry of Defence", contractor: "Al Aboudi for Construction", description: "Blast Valves and Junction Boxes", category: "Military" },
+  { project: "SABB Headquarters", client: "SABB", contractor: "El Seif Engineering", description: "Vault Door", category: "Commercial" },
+  { project: "Bank Project", client: "Banking Facility", contractor: "Safari Company", description: "Vault Door", category: "Commercial" },
+  { project: "Saudi Embassy, Brazil", client: "Saudi Embassy", contractor: "Hyoon Security Systems", description: "Security Systems and Door Hardware", category: "Government" },
+  { project: "Baker Hughes Chemical Plant and Jubail Gas Hub", client: "Baker Hughes", contractor: "Fire and Hazard", description: "Protective Doors and Industrial Metalwork", category: "Industrial" },
+  { project: "Aramco Facility", client: "Saudi Aramco", contractor: "Fire and Hazard", description: "Blast Door", category: "Industrial" },
+  { project: "Yanbu Independent Water Project", client: "Water Project", contractor: "Fire and Hazard", description: "Special Protective Metalwork", category: "Industrial" },
+  { project: "Saudi Embassy, Oslo", client: "Saudi Embassy", contractor: "Hyoon Security Systems", description: "Security Systems and Protective Metalwork", category: "Government" },
+  { project: "Tabuk, Qassim and Al Jouf Facilities", client: "Government Facilities", contractor: "Ambat Company", description: "Blast Valves and Sand Trap Louvers", category: "Military" },
+  { project: "KAP 2B — Sites 09, 13 and 17", client: "Government Security Facilities", contractor: "Al Arrab Contracting", description: "Grill Doors and Roof Hatches", category: "Government" },
+  { project: "MMGP Project", client: "MMGP", contractor: "Fire and Hazard", description: "Ballistic Doors and Windows", category: "Industrial" },
+  { project: "Sudair Solar Power Plant", client: "Sudair Solar Power Plant", contractor: "Fire and Hazard", description: "Blast Resistant Doors", category: "Industrial" },
+  { project: "Prince Sultan Air Base, Al Kharj", client: "Ministry of Defence and Aviation", contractor: "Al Bawani General Contracting", description: "Blast Resistant Swing and Sliding Doors", category: "Military" },
+  { project: "MOFA Diplomatic Institute", client: "Ministry of Foreign Affairs", contractor: "Al Bawani General Contracting", description: "Bulletproof and Blast-Proof Doors and Windows", category: "Government" },
+  { project: "30 Bunkers, Al Hasa", client: "Saudi Arabian National Guard", contractor: "Latifia Trading & Contracting", description: "Blast Bunker Doors", category: "Military" },
+  { project: "KNPC Sulphur Handling Facilities", client: "Daelim Korea", contractor: "Afcons Infrastructure Co.", description: "Blast Resistant Windows", category: "Industrial" },
 ];
+
 export default projects;

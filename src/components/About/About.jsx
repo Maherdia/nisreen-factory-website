@@ -16,13 +16,12 @@ function About() {
 
                     <p className="lead">
                         <strong>Special & Safety Work (SSW)</strong>, operating under the
-                        well-established <strong>Nisreen Factory</strong>, is one of Saudi
-                        Arabia's leading manufacturers of engineered physical security
-                        solutions. We specialize in the design, engineering,
-                        manufacturing, testing and installation of advanced protection
-                        systems for military, governmental, industrial, commercial and
-                        critical infrastructure projects throughout Saudi Arabia and
-                        the GCC.
+                        well-established <strong>Nisreen Factory</strong> and as a member of
+                        <strong> Saudi Etqaan Group</strong>, is one of Saudi Arabia&apos;s leading
+                        manufacturers of engineered physical security solutions. We specialize in
+                        the design, engineering, manufacturing, testing and installation of advanced
+                        protection systems for military, governmental, industrial, commercial and
+                        critical infrastructure projects throughout Saudi Arabia and the GCC.
                     </p>
 
                 </div>
@@ -110,10 +109,10 @@ function About() {
 
                 <div className="about-btn-wrapper">
 
-                   <Link
-                    to="/about"
-                     className="about-btn" >
-                    LEARN MORE
+                    <Link
+                        to="/about"
+                        className="about-btn" >
+                        LEARN MORE
                     </Link>
 
                 </div>

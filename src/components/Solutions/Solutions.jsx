@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import ProductCard from "../ProductCard/ProductCard";
 
-import securityDoors from "../../assets/products/SecurityDoors.jpg";
-import securityWindows from "../../assets/products/SecurityWindow.jpg";
-import fireProtection from "../../assets/products/FireProtection.jpg";
-import industrialSteel from "../../assets/products/IndustrialSteelProducts.jpg";
-import engineering from "../../assets/products/SecuritySystems&Engineering.webp";
+import securityDoors from "../../assets/homescreen photos/SecurityDoors.jpg";
+import securityWindows from "../../assets/homescreen photos/SecurityWindow.jpg";
+import fireProtection from "../../assets/homescreen photos/FireProtection.jpg";
+import industrialSteel from "../../assets/homescreen photos/IndustrialSteelProducts.jpg";
+import engineering from "../../assets/homescreen photos/SecuritySystems&Engineering.webp";
 
 function Solutions() {
 
@@ -87,8 +87,8 @@ function Solutions() {
 
                 <div className="solutions-btn">
 
-                   <Link to="/products" className="primary-btn">
-                   VIEW ALL PRODUCTS
+                    <Link to="/products" className="primary-btn">
+                        VIEW ALL PRODUCTS
                     </Link>
 
                 </div>

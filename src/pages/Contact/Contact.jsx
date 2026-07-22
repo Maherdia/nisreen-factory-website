@@ -5,11 +5,11 @@ import Footer from "../../components/Footer/Footer";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
 function Contact() {
+    const whatsappLink =
+        "https://wa.me/966596688787?text=Hello%20SSW%20Nisreen%20Factory%2C%20I%20would%20like%20to%20discuss%20a%20project.";
 
     return (
-
         <>
-
             <Navbar />
 
             <PageHeader
@@ -20,7 +20,6 @@ function Contact() {
             {/* HERO */}
 
             <section className="contact-hero">
-
                 <span className="section-tag">
                     GET IN TOUCH
                 </span>
@@ -36,51 +35,52 @@ function Contact() {
                 </p>
 
                 <div className="contact-actions">
-
                     <a
                         href="tel:+966596688787"
                         className="primary-btn"
                     >
-                        CALL US
+                        Call US
                     </a>
 
                     <a
                         href="mailto:info@nisreenfactory.com"
                         className="primary-btn"
                     >
-                        EMAIL US
+                        E-mail Us
                     </a>
 
+                    <a
+                        href={whatsappLink}
+                        className="primary-btn whatsapp-action-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Contact SSW on WhatsApp"
+                    >
+                        WhatsApp
+                    </a>
                 </div>
-
             </section>
 
             {/* CONTACT DETAILS */}
 
             <section className="contact-details">
-
                 <div className="contact-card">
-
                     <h3>Phone</h3>
 
                     <p>
                         +966 59 668 8787
                     </p>
-
                 </div>
 
                 <div className="contact-card">
-
                     <h3>Email</h3>
 
                     <p>
                         info@nisreenfactory.com
                     </p>
-
                 </div>
 
                 <div className="contact-card">
-
                     <h3>Working Hours</h3>
 
                     <p>
@@ -88,15 +88,12 @@ function Contact() {
                         <br />
                         8:00 AM – 5:00 PM
                     </p>
-
                 </div>
-
             </section>
 
             {/* MAP */}
 
             <section className="map-section">
-
                 <span className="section-tag">
                     FACTORY LOCATION
                 </span>
@@ -106,15 +103,11 @@ function Contact() {
                 </h2>
 
                 <p className="section-description">
-
                     We welcome project discussions and technical meetings at our factory.
-
                 </p>
 
                 <div className="map-placeholder">
-
                     <section className="contact-map">
-
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7256.250616553204!2d46.8287857!3d24.5848713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2fa75b14ffcd9f%3A0x68f51d01e1788a00!2sSpecial%20and%20Safety%20Work%20Nisreen%20Factory!5e0!3m2!1sen!2ssa!4v1782894217255!5m2!1sen!2ssa"
                             title="Special & Safety Work Location"
@@ -122,18 +115,13 @@ function Contact() {
                             allowFullScreen
                             referrerPolicy="strict-origin-when-cross-origin"
                         ></iframe>
-
                     </section>
-
-
                 </div>
-
             </section>
 
             {/* SERVICES */}
 
             <section className="contact-services">
-
                 <span className="section-tag">
                     HOW WE CAN HELP
                 </span>
@@ -143,14 +131,11 @@ function Contact() {
                 </h2>
 
                 <p className="section-description">
-
                     Our team provides engineering consultation, technical support and
                     customized manufacturing solutions for projects of every size.
-
                 </p>
 
                 <div className="services-grid">
-
                     <div className="service-card">
                         Engineering Consultation
                     </div>
@@ -174,15 +159,12 @@ function Contact() {
                     <div className="service-card">
                         Fast Technical Response
                     </div>
-
                 </div>
-
             </section>
 
             {/* PRODUCTS */}
 
             <section className="contact-products">
-
                 <span className="section-tag">
                     OUR PRODUCTS
                 </span>
@@ -192,13 +174,10 @@ function Contact() {
                 </h2>
 
                 <p className="section-description">
-
                     Browse our complete range of engineered security products and industrial solutions.
-
                 </p>
 
                 <div className="products-links">
-
                     <a href="/products#security-doors">
                         <h3>Security Doors</h3>
                         <span>Explore Products →</span>
@@ -223,52 +202,51 @@ function Contact() {
                         <h3>Security Systems</h3>
                         <span>Explore Products →</span>
                     </a>
-
                 </div>
-
             </section>
 
             {/* CTA */}
 
             <section className="contact-cta">
-
                 <h2>
                     Ready To Start Your Project?
                 </h2>
 
                 <p>
-
                     Our engineering specialists are ready to discuss your project,
                     specifications and manufacturing requirements.
-
                 </p>
 
                 <div className="contact-actions">
-
                     <a
                         href="tel:+966596688787"
                         className="primary-btn"
                     >
-                        CALL US
+                        Call us
                     </a>
 
                     <a
                         href="mailto:info@nisreenfactory.com"
                         className="primary-btn"
                     >
-                        EMAIL US
+                        E-mail Us
                     </a>
 
+                    <a
+                        href={whatsappLink}
+                        className="primary-btn whatsapp-action-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Contact SSW on WhatsApp"
+                    >
+                        WhatsApp
+                    </a>
                 </div>
-
             </section>
 
             <Footer />
-
         </>
-
     );
-
 }
 
 export default Contact;
